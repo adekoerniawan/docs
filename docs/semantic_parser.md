@@ -45,10 +45,10 @@
 
 ## question parser
 ----
-### 成分句法分析（stanford）
+### 1. 成分句法分析（stanford）
 
-### 依存句法分析（ltp）
+### 2. 依存句法分析（ltp）
 
-### 语义角色标注（ltp）
+### 3. 语义角色标注（ltp）
 
-### 语义解析（smantic parsing）
+### 4. 语义解析（smantic parsing）
