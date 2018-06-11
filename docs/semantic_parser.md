@@ -5,7 +5,7 @@
 
     * 统计类count
         > * 中国有多少个省？
-        ```
+        ```sparql
         select (count(?x) as ?num) where
         {
 	        ?x :type "province".
@@ -13,7 +13,7 @@
         }
         ```
         > * 人口超过1000万的城市有多少个？
-        ```
+        ```sparql
         select (count(?x) as ?num) where
         {
 	        ?x :type "city".
