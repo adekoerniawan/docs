@@ -5,23 +5,22 @@
 
     * 统计类count
         > * 中国有多少个省？
-            ```
-            select (count(?x) as ?num) where
-            {
-	            ?x :type "province".
-	            ?x :所属国家 "中国".
-            }
-            ```
-            
+        ```
+        select (count(?x) as ?num) where
+        {
+	        ?x :type "province".
+	        ?x :所属国家 "中国".
+        }
+        ```
         > * 人口超过1000万的城市有多少个？
-            ```
-            select (count(?x) as ?num) where
-            {
-	            ?x :type "city".
-	            ?x :人口 ?p.
-	            filter(?p > 10e6).
-            }
-            ```
+        ```
+        select (count(?x) as ?num) where
+        {
+	        ?x :type "city".
+	        ?x :人口 ?p.
+	        filter(?p > 10e6).
+        }
+        ```
     
     * 排序类max，min
         > * 人口最多的国家是哪个？
