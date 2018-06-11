@@ -6,7 +6,7 @@
     * 统计类count
         > * 中国有多少个省？
         ```sparql
-        select (count(?x) as ?num) where
+        SELECT (count(?x) as ?num) WHERE
         {
 	        ?x :type "province".
 	        ?x :所属国家 "中国".
