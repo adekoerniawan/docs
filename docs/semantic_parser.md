@@ -74,7 +74,7 @@
     * 选择类choice
         > * 江苏的省会是苏州还是南京啊？
         ```sparql
-        /* fix */
+        # fix
         SELECT DISTINCT ?x WHERE
         {
             "江苏" :省会 ?x
@@ -82,7 +82,7 @@
         ```
         > * 杭州是江苏的省会还是浙江的省会？
         ```sparql
-        /* fix */
+        # fix
         SELECT DISTINCT ?x WHERE
         {
             ?x :省会 "杭州"
