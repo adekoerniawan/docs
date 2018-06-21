@@ -36,6 +36,7 @@ temp:
 {
     "condition_num":2,
     "template":entity+Star(W(pos='other'),greedy=False)+relation,
+    "template_str":'''entity+Star(W(pos='other'),greedy=False)+relation''',
     "func":self.question_set.entity_SP_,
 }
 ```
