@@ -2,7 +2,7 @@
 
 ### query_data
 
-```json
+```
 #[Concept, Entity, Relation, Attribute, Value]
 {
     "query":"中国的首都在哪里",
