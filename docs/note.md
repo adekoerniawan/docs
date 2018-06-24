@@ -87,11 +87,14 @@ exp1：
 ```
 query：苏州是哪个国家的？
        苏州是哪个省的？
+       
 KG：<苏州市， 所属国家， 中国>
     <苏州市，所属省份，江苏省>
+    
 NER:（苏州，Entity，苏州市）
     （国家，Relation，所属国家）
     （省，Relation，所属省份）
+    
 QA：select ?x where {苏州市 所属国家 ?x}
     select ?x where{苏州市，所属省份，?x}
 ```
@@ -100,13 +103,16 @@ exp2：
 ```
 query：苏州是哪个国家的？
        苏州是哪个省的？
+       
 KG：<苏州市， 所属地区， 中国>
     <苏州市，所属地区，江苏省>
     <中国, IsA, country>
     <江苏省, IsA, province>
+    
 NER:（苏州，Entity，苏州市）
     （国家，Concept，country）
     （省，Concept，province）
+    
 QA：select ?x where {苏州市 ?p ?x. ?x IsA, country}
     select ?x where{苏州市，?p，?x. ?x IsA, province}
 ```
