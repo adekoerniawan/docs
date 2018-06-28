@@ -7,6 +7,10 @@
 {
     "query":"中国的首都在哪里",
     "query_tagger":"[中国@Entity]的[首都@Relation]在哪里",
+    "ner":[
+            {"startidx":0, "length":2, "type":"Entity", "mention":"中国", "uri":"中国（四大文明古国之一）"},
+            {"startidx":3, "length":2, "type":"Relation", "mention":"首都", "uri":"首都"},
+            ],
     "ner_count":{
                     "concept":0,
                     "entity":1,
@@ -21,9 +25,10 @@
                     Word("首都","Relation","首都uri"),
                     Word("在哪里","other","在哪里"),
                   },
-    "template":"entity+Star(W(pos='other'),greedy=False)+relation",
+    "template":"entity + Other_or_None + relation",
     "func":"entity_SP_",
-    "SPARQL":"",
+    #"sort":{...},
+    "SPARQL":"...",
     "reply":"北京",
 }
 ```
