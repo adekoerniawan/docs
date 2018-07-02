@@ -28,6 +28,7 @@
     "template":"entity + Other_or_None + relation",
     "func":"entity_SP_",
     #"sort":{...},
+    "slot_value":{"subject":"中国（...）", "subject_m":"中国"，...}
     "SPARQL":"...",
     "reply":"北京",
 }
